@@ -1,0 +1,15 @@
+controller_list:
+  - name: fake_group1_controller_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - motortom2m
+      - joint2
+      - joint4
+      - joint6
+  - name: fake_group2_controller_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - end
+initial:  # Define initial robot poses per group
+  - group: group1_controller
+    pose: pose1
